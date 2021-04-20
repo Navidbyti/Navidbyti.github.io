@@ -1,0 +1,16 @@
+body{
+    background-image: linear-gradient( to right , #de6262, #ffb88c);
+    
+    
+}
+
+h1 , h3 {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    margin: auto;
+    text-align: center;
+}
+.links a {
+    text-align: center;
+ display: block;
+}

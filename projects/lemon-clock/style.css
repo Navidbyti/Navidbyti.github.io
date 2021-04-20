@@ -1,0 +1,52 @@
+body{
+       background-image: linear-gradient(to right, #FF8008,#FFC837);
+
+}
+h1 , h2 , .the-time , .the-time-text{
+    color: #0f101d;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+.the-time > p{
+    font-size: 60px;
+    margin: 0;
+}
+.lemon-image{
+    margin: auto;
+    /* width: 30%; */
+    position: relative;
+}
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px Solid firebrick;
+}
+.the-time-text{
+    font-size: 30px;
+    color: antiquewhite;
+    text-shadow: 3px 3px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sukht-button{
+    background-color : white;
+    margin:10px;
+    padding: 10px 20px;
+    border : 0 none;
+    border-radius : 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Bangers', cursive;
+    font-size: 2em;
+}
+.sukht-button:hover{
+    background-color : rgb(172, 172, 172);
+
+}

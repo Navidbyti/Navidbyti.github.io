@@ -1,0 +1,252 @@
+:root{
+--color1:#c4667c;
+--color2-s:#5e303a;
+--color2:#5b6270;
+--font1:'Noto Sans', sans-serif;
+}
+body{
+    background-image: linear-gradient(var(--color1) 20em, var(--color2) 20.5em );
+    box-sizing: border-box;
+    margin: 0px 10%;
+    font-family: var(--font1);
+}
+
+
+.title{
+margin-bottom: 5%;
+
+    display: inline-block;
+    color: white;
+    
+}
+.title > h4 {
+    line-height: 0;
+}
+.contact{
+    float: right;
+    margin: 30px;
+    
+}
+.contact > a {
+
+    display:inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: var(--color1);
+    box-shadow: -1px 5px 5px var(--color2-s) ;
+    border-radius: 100%;
+    text-decoration: none;
+    color:white;
+    transition: .5s;
+}
+.contact > a:hover, .contact-card > a:hover{
+    background-color:var(--color2-s);
+}
+.hello-card img {
+    object-fit: cover;
+    object-position:  5% 5% ;
+    width: 35%;
+    height: 400px;
+    float: left;
+    
+}
+.hello-card{
+    background-color: aliceblue;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -3px 5px 25px black;
+}
+.rightpart{
+    width: 61%;
+    float: left;
+    padding-left: 20px;
+    position: relative;
+}
+#comment-up{
+    background-color: var(--color1);
+    position: relative;
+    padding: 3px;
+    border-radius: 3px 3px 0 3px;
+    display: table;
+}
+#comment-up::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    border-width:5px;
+    margin-left: -7px;
+    border-style: solid;
+    border-color: var(--color1) var(--color1) transparent transparent;
+    z-index: 1;
+}
+
+table, th, tr, td{
+    text-align: left;
+
+}
+th{
+    padding-right: 30px;
+}
+.rightpart span{
+    color: var(--color1);
+}
+.contact-parent{
+    position: relative;
+}
+.contact-card{
+    background-color: var(--color1);
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.contact-card > a{
+    text-decoration: none;
+    text-align: center;
+    padding:21px ;
+    color: white;
+    font-size: 1.3em;
+    background-color: var(--color1);
+    
+}
+
+.headers{
+    text-align: center;
+    color: var(--color1);
+    margin: 6% 0 4% 0;
+}
+
+.skill-card{
+    display: flex;
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: -3px 5px 25px black;
+    
+}
+.skill-text{
+    width: 49%;
+    text-align: justify;
+    flex: 0.91;
+}
+.skills{
+    flex: 0.9;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+.progress-bar{
+    border-radius: 10px;
+    width: 100%;
+    height: 6px;
+    background-color:var(--color2);
+}
+[class|="p"]{
+    border-radius:10px 0 0 10px ;
+
+height: 6px;
+background-color: var(--color1);
+}
+.protext > p{
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.persent{
+    float: right;
+}
+
+
+.p-1{
+width: 65%;
+}
+
+.p-2{
+    width:90%
+}
+
+.p-3{
+    width: 10%
+}
+
+.p-4{
+   width: 100%;
+   border-radius: 20px;
+}
+.flexbox-main{
+    display: flex;
+}
+
+.flexbox-right{
+    flex-direction: column;
+    margin-top:20px ;
+    flex:5;
+    display: flex;
+    
+}
+.flexbox-mid{
+    flex:0.1;
+    display: flex;
+    background-color: aliceblue;
+    border: 1px solid var(--color2-s);
+    border-radius: 20px;
+}
+.flexbox-left{
+    margin-left: 15px;
+    margin-top:40px ;
+    flex:5;
+    display: flex;
+    flex-direction: column;
+}
+
+[class|="box"]{
+background-color: aliceblue;
+padding: 20px;
+border-radius: 10px;
+width: 85%;
+margin: 10px;
+position: relative;
+box-shadow: -3px 5px 25px #444;
+}
+.year-box{
+    background-color: var(--color1);
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px 0px 5px 5px;
+    position: relative;
+    
+}
+.year-box::after{
+    content: " ";
+    position: absolute;
+    border-width: 7.5px;
+    bottom: 100%;
+    left:100%;
+    margin-left:-15px ;
+    border-style: solid;
+    border-color: transparent var(--color1) var(--color1) transparent;
+}
+
+.box-left::after{
+    position: absolute;
+    content:" " ;
+    border-style: solid;
+    border-width:20px;
+    border-color: transparent aliceblue transparent transparent;
+    right:100%;
+}
+
+.box-right::after{
+    position: absolute;
+    content:" " ;
+    border-style: solid;
+    border-width:20px;
+    border-color: transparent transparent transparent aliceblue;
+    left:100%;
+    bottom: 60%;
+}

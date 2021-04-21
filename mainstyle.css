@@ -1,6 +1,18 @@
+
+   :root{
+       --bgColor1:#422680;
+       --bgColor2:#f54952;
+   }
+
+html{
+    font-family:'Nunito', sans-serif ;
+}
 body{
-    background-image: linear-gradient( to right , #de6262, #ffb88c);
-    
+    background-color: var(--bgColor2);
+    /* position: relative; */
+    padding: 0;
+    margin: 0;
+   
     
 }
 
@@ -9,8 +21,101 @@ h1 , h3 {
     font-family: 'Dancing Script', cursive;
     margin: auto;
     text-align: center;
+    color: antiquewhite;
 }
-.links a {
+.links p {
+    transition: all 0.5;
+    position: absolute;
+    opacity: 0;
+
+}
+.links p.active{
+    transform: translate(-50% ,-50%);
     text-align: center;
- display: block;
+    position: relative;
+    left: 50%;
+    width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    opacity: 10;
+}
+
+a {
+    color: aliceblue;
+}
+article{
+    font-size: 26px;
+    padding: 10px  10% ;
+    text-align: justify;
+    color: antiquewhite;
+    transition: all 0.5;
+}
+.hamburger{
+    position: absolute;
+    right: 10px;
+    z-index: 100;
+    margin: 20px;
+    width: 60px;
+    height: 50px;
+    /* background-color: rgb(0, 136, 255); */
+}
+.hamburger > div{
+    position: relative;
+    margin-bottom: 15%;
+    width: 90%;
+    height: 20%;
+    background-color: aliceblue;
+    left: 5%;
+    border-radius: 50px;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+
+    transition: all 0.5s  ;
+    
+    
+}
+
+.ham1.active{
+    transform: translateY(19px) rotate(45deg);
+    
+}
+ 
+.ham3.active{
+    transform: translateY(-19px) rotate(-45deg);
+    
+}
+.ham2.active{
+    background-color: transparent;
+    transform: translateX(30px);
+    box-shadow: none;
+
+}
+.left-square{
+    transition: all 1s;
+    width: 0%;
+}
+.left-square.active{
+position: absolute;
+height: 100%;
+left: 0;
+width: 20%;
+background-color: var(--bgColor1);
+
+}
+
+.right-square{
+    transition: all 1s;
+    width: 0%;
+}
+.right-square.active{
+    
+position: absolute;
+right: 0;
+height: 100%;
+width: 20%;
+background-color: var(--bgColor1);
+
+}
+article.active{
+  display: none;  
+
 }

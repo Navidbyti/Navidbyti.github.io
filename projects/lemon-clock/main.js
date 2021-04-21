@@ -56,14 +56,14 @@ timeBtn.addEventListener('click', function(){
         timeBtn.setAttribute('id' , 'secound');
         timeBtn.textContent = 'The engine is now on';
         timeBtn.style.backgroundColor = '#fa5a5a';
-        img.setAttribute('src' , 'images/party-time.PNG');
+        img.setAttribute('src' , 'images/party-time.png');
         textParty.textContent ='hayyyyy heyyyyy mashalaa!';
 
     }else if(timeBtn.getAttribute('id') === 'secound'){
         timeBtn.setAttribute('id' , 'first');
         timeBtn.textContent = 'Sukhte engine badane man!';
         timeBtn.style.backgroundColor = 'white';
-        img.setAttribute('src' , 'images/wainting-party.PNG');
+        img.setAttribute('src' , 'images/wainting-party.png');
         textParty.textContent = 'Porteghal haye malmalani, dar shakhe sar haye nielgun!';
     }
 })

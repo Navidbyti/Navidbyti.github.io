@@ -24,10 +24,14 @@ h1 , h3 {
     color: antiquewhite;
 }
 .links p {
-    transition: all 0.5;
+    transition: all 0.5s;
     position: absolute;
-    opacity: 0;
+    
 
+}
+a{
+    color:rgba(255, 255, 255, 0) ;
+    transition: all 1s;
 }
 .links p.active{
     transform: translate(-50% ,-50%);
@@ -37,19 +41,32 @@ h1 , h3 {
     width: 40%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-    opacity: 10;
+    color:rgba(255, 255, 255, 0)
+    
 }
 
-a {
-    color: aliceblue;
+p.active a {
+    color: rgba(255, 255, 255, 1);
 }
 article{
+    position: absolute;
+    z-index: -1;
     font-size: 26px;
     padding: 10px  10% ;
     text-align: justify;
-    color: antiquewhite;
-    transition: all 0.5;
+    color: rgba(255, 255, 255, 1);
+    opacity: 10;
+    transition: all 1s;
+    
+    
 }
+
+article.active{
+  
+  color:  rgba(255, 255, 255, 0);
+      
+  }
+
 .hamburger{
     position: absolute;
     right: 10px;
@@ -91,31 +108,37 @@ article{
 }
 .left-square{
     transition: all 1s;
+    position: absolute;
     width: 0%;
+
+    height: 100%;
+    left: 0;
+    background-color: var(--bgColor1);
 }
 .left-square.active{
-position: absolute;
+    
+transition: all 1s;
 height: 100%;
-left: 0;
 width: 20%;
-background-color: var(--bgColor1);
+
 
 }
 
 .right-square{
     transition: all 1s;
     width: 0%;
-}
-.right-square.active{
-    
-position: absolute;
+    position: absolute;
 right: 0;
 height: 100%;
-width: 20%;
+width: 0%;
 background-color: var(--bgColor1);
 
 }
-article.active{
-  display: none;  
+.right-square.active{
+    
+
+height: 100%;
+width: 20%;
 
 }
+

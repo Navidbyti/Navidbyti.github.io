@@ -10,19 +10,26 @@ icon.setAttribute('rel', 'icon');
 icon.setAttribute('href', '../../icon.ico')
 
 head.appendChild(icon)
-//Declaring the font for the header thing
+//Declaring the fonts for all files
+
 const link1 = document.createElement('link');
 link1.setAttribute('rel' , 'preconnect');
 link1.setAttribute('href' , `https://fonts.gstatic.com`)
+const link2 = document.createElement('link');
+link2.setAttribute('rel' , 'stylesheet');
+link2.setAttribute('type' , 'text/css');
+link2.setAttribute('href' , `https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&display=swap`)
 const link = document.createElement('link');
 link.setAttribute('rel' , 'stylesheet');
 link.setAttribute('type' , 'text/css');
 link.setAttribute('href' , `https://fonts.googleapis.com/css2?family=Bangers&display=swap`)
 html.appendChild(link);
 html.appendChild(link1);
+html.appendChild(link2);
 
 //the header elements css property
 const header = document.querySelector('header');
+header.style.textAlign = 'left';
 header.style.backgroundImage = 'linear-gradient( to right, #41295a ,#2F0743)' ;
 header.style.padding = '20px';
 header.style.position = 'relative'; 

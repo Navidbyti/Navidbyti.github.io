@@ -12,6 +12,7 @@ function addToLinks(name, link){
     links.appendChild(p);
 }
 addToLinks('The To Do List' , 'projects/to-do-list/the-to-do-list.html');
+addToLinks('The Bouncing Balls' , 'projects/the-bouncing-balls/bouncing-ball.html');
 
 
 

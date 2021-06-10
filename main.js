@@ -1,21 +1,36 @@
 
-// adding links with JS 
+// adding links with JS and a JSON file
 const links = document.querySelector('.links');
+let projects;
 
-function addToLinks(name, link){
-    const p = document.createElement('p')
-    p.classList.add('toggle-active');
-    const a = document.createElement('a');
-    a.textContent = name;
-    a.setAttribute('href' , link);
-    p.appendChild(a);
-    links.appendChild(p);
+fetch('project.json').then(function(response) {
+    if(response.ok){
+        response.json().then(function(json){
+        projects = json;
+        createProjectLinks();
+        drawMenu()
+    })}else{
+        console.log(response.status)
+    }
+}).catch(e => console.log(e.message))
+
+function createProjectLinks(){
+    for(let i=0; i < projects.length; i++){
+        console.log(projects[i])
+        const p = document.createElement('p')
+        p.classList.add('toggle-active');
+        const a = document.createElement('a');
+        a.textContent = projects[i].name;
+        a.setAttribute('href' , projects[i].url);
+        p.appendChild(a);
+        links.appendChild(p);
+    }
 }
-addToLinks('The To Do List' , 'projects/to-do-list/the-to-do-list.html');
-addToLinks('The Bouncing Balls' , 'projects/the-bouncing-balls/bouncing-ball.html');
 
 
 
+
+function drawMenu(){
 const hamburger = document.querySelector('.hamburger');
 
 const actives = document.querySelectorAll('.toggle-active')
@@ -25,3 +40,4 @@ hamburger.addEventListener('click' ,function(){
        actives[i].classList.toggle('active');
    }
 })
+}

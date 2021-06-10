@@ -15,6 +15,15 @@ body{
    
     
 }
+span{
+    color: #ffffff;
+    transition: all, 0.5s;
+}
+
+span:hover{
+    color: #422680;
+    
+}
 
 h1 , h3 {
     position: relative;
@@ -74,7 +83,7 @@ article{
     
 }
 
-article.active{
+article.active , span.active{
   
   color:  rgba(255, 255, 255, 0);
       

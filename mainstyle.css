@@ -9,7 +9,6 @@ html{
 }
 body{
     background-color: var(--bgColor2);
-    /* position: relative; */
     padding: 0;
     margin: 0;
    
@@ -96,7 +95,7 @@ article.active , span.active{
     margin: 20px;
     width: 60px;
     height: 50px;
-    /* background-color: rgb(0, 136, 255); */
+    
 }
 .hamburger > div{
     position: relative;

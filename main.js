@@ -12,11 +12,10 @@ fetch('project.json').then(function(response) {
     })}else{
         console.log(response.status)
     }
-}).catch(e => console.log(e.message))
+}).catch(e => {throw new Error(e.message)})
 
 function createProjectLinks(){
     for(let i=0; i < projects.length; i++){
-        console.log(projects[i])
         const p = document.createElement('p')
         p.classList.add('toggle-active');
         const a = document.createElement('a');
